@@ -1,6 +1,7 @@
 module.exports = {
     title: 'QZ5Z Oauth2.0',
     description: '五中人开放授权平台 使用说明',
+    base: '/oauth2/',
     themeConfig: {
         nav: [{
                 text: 'Home',
