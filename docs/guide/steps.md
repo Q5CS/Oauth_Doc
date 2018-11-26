@@ -31,10 +31,10 @@ https://example.com/api/oauth/callback?
 
 ## 通过 code 获取 token
 
-`POST` 获取令牌 token，当获取到授权码 code 后，客户端需要用它获取访问令牌：
+`POST` 获取令牌 token，当获取到授权码 code 后，应用所在服务器需要用它获取访问令牌：
 
 ``` url
-https://open.qz5z.ren/oauth2/token?
+https://open.qz5z.ren/oauth2/authorize/token?
   client_id=a5ce5a6c7e8c39567ca0&
   client_secret=xxxx&
   grant_type=authorization_code&
@@ -56,10 +56,10 @@ https://open.qz5z.ren/oauth2/token?
 
 ``` json
 {
-  "access_token":"a14afef0f66fcffce3e0fcd2e34f6ff4",
-  "token_type":"bearer",
-  "expires_in":3600,
-  "refresh_token":"5d633d136b6d56a41829b73a424803ec"
+  "access_token": "a14afef0f66fcffce3e0fcd2e34f6ff4",
+  "token_type": "bearer",
+  "expires_in": 3600,
+  "refresh_token": "5d633d136b6d56a41829b73a424803ec"
 }
 ```
 
